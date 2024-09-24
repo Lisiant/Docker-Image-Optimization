@@ -46,7 +46,7 @@ Docker 이미지를 최적화하는 것은 효율적인 리소스 활용, 더 �
 
 기존 Spring Boot 프로젝트에서 Docker를 통해 CI/CD를 적용했던 경험을 토대로 해당 프로젝트에서 사용했던 Dockerfile을 개선하여 성능을 최적화하고자 합니다.
 
-### 기존 Dockerfile
+### 📉 기존 Dockerfile
 
 ```bash
 FROM openjdk:17-jdk-alpine
@@ -75,7 +75,7 @@ EXPOSE 8080
     
     - `의존성 캐시` : 빌드 과정에서 한 번 설치된 외부 라이브러리나 모듈을 저장해, 이후 빌드 시 다시 다운로드하지 않고 빌드 시간을 줄이는 메커니즘
 
-### 개선된 Dockerfile 및 docker-compose.yml
+### 📈 개선된 Dockerfile 및 docker-compose.yml
 
 **Dockerfile**
 
@@ -162,7 +162,7 @@ volumes:
 
 보안을 위해 환경 변수를 `.env` 파일로 분리하여 작성하는 것이 필요합니다.
 
-### 성능 측정
+### ⏳ 성능 측정
 
 **기존 빌드 시간**
 
